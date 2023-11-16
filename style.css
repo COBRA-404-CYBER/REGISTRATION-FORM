@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/backgrounf.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.registration-box {
+    background-color: rgba(255, 255, 255, 0.097);
+    border: 2px solid white;
+    backdrop-filter: blur(50px);
+    width: 750px;
+    color: white;
+    padding: 50px 30px;
+    border-radius: 8px;
+    margin: 0 15px;
+}
+
+.registration-box h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.registration-box .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input-field {
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin: 13px 0;
+}
+
+.input-field input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    padding: 15px 15px 15px 40px;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-field input::placeholder {
+    color: white;
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.registration-box label {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+}
+
+.registration-box label input {
+    margin-right: 5px;
+    accent-color: white;
+}
+
+.registration-box .btn {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(41, 39, 39);
+}
+
+@media (max-width: 814px) {
+    .registration-box {
+        transition: .4s;
+        width: 680px;
+    }
+}
+
+@media (max-width: 682px) {
+    .input-box .input-field {
+        transition: .4s;
+        width: 100%;
+    }
+
+    .registration-box {
+        transition: .4s;
+        width: 500px;
+        transition: .4s;
+    }
+
+    .input-box .input-field i {
+        transition: .4s;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    .registration-box {
+        transition: .4s;
+        width: 350px;
+    }
+
+    .registration-box h1 {
+        transition: .4s;
+        font-size: 17px;
+    }
+
+    .input-box .input-field {
+        transition: .4s;
+        height: 30px;
+    }
+
+    .input-field input {
+        transition: .4s;
+        font-size: 11px;
+        padding: 10px 10px 10px 30px;
+    }
+
+    .input-box .input-field i {
+        transition: .4s;
+        font-size: 9px;
+    }
+
+    .registration-box label {
+        transition: .4s;
+        font-size: 11px;
+    }
+
+    .registration-box .btn {
+        transition: .4s;
+        height: 35px;
+        font-size: 11px;
+    }
+}
